@@ -10,16 +10,6 @@
   grid-row: 1;
   background-color: darkolivegreen;
 }
-.navigation-menu ul, .category-menu ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-}
-.navigation-menu li, .category-menu li {
-  display: inline-block;
-  margin: 0 10px;
-}
 .banner{
   grid-column: 1/2;
   grid-row: 2;
