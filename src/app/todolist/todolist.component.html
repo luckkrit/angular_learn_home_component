@@ -1,5 +1,9 @@
 My Tasks today:
 <ul>
-  <li *ngFor="let t of tasks">{{t}}</li>
+  <li *ngFor="let t of tasks; index as i">
+    {{ t }}
+    <button (click)="deleteTask(i)">Delete</button>
+  </li>
 </ul>
-Task: <input type="text" #task><button (click)="addTask(task.value); task.value='';">Add</button>
+Task: <input type="text" #task />
+<button (click)="addTask(task.value); task.value = ''">Add</button>
