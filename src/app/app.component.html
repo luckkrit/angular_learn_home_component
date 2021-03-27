@@ -13,8 +13,23 @@
 <!--<app-todolist></app-todolist>-->
 <!--<app-swiftview></app-swiftview>-->
 <!--<app-product></app-product>-->
-<app-navbar></app-navbar>
-<app-main-content-component></app-main-content-component>
+
+<nav>
+  <div class="container">
+    <ul>
+      <li><a [routerLink]="['/']">Home</a></li>
+      <li><a [routerLink]="['/login']">Login</a></li>
+      <li><a [routerLink]="['/products']">Products</a></li>
+      <li><a [routerLink]="['/products/222']">Product 222</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<footer>
+  <div class="container">footer</div>
+</footer>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->

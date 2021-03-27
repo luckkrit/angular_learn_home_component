@@ -3,25 +3,24 @@ import { CommonModule } from '@angular/common';
 import { CategorymenuComponent } from './categorymenu/categorymenu.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TopbannerComponent } from './topbanner/topbanner.component';
-import { MainContentComponentComponent } from './main-content-component/main-content-component.component';
 import { SearchbarComponent } from './navbar/searchbar/searchbar.component';
-import { LoginComponentComponent } from './login-component/login-component.component';
-import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
+import { LoginComponent } from './login/login.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MainContentComponent } from './main-content/main-content.component';
 
 @NgModule({
   declarations: [
     CategorymenuComponent,
     NavbarComponent,
     TopbannerComponent,
-    MainContentComponentComponent,
     SearchbarComponent,
-    LoginComponentComponent,
-    PageNotFoundComponentComponent,
+    LoginComponent,
+    PageNotFoundComponent,
+    MainContentComponent,
   ],
   imports: [CommonModule],
   exports: [
     NavbarComponent,
-    MainContentComponentComponent,
     TopbannerComponent,
     SearchbarComponent,
     CategorymenuComponent,

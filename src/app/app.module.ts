@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
@@ -18,6 +18,7 @@ import { HomeComponent } from './home/home.component';
 import { BackendService } from './backend.service';
 import { HomeModule } from './home/home.module';
 import { CatalogModule } from './catalog/catalog.module';
+import { routes } from './Routes';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,13 @@ import { CatalogModule } from './catalog/catalog.module';
     // ProductItemComponent,
     // TaskComponent,
   ],
-  imports: [BrowserModule, FormsModule, HomeModule, CatalogModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HomeModule,
+    CatalogModule,
+    RouterModule.forRoot(routes),
+  ],
   providers: [BackendService],
   bootstrap: [AppComponent],
 })
