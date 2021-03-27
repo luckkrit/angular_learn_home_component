@@ -14,22 +14,32 @@
 <!--<app-swiftview></app-swiftview>-->
 <!--<app-product></app-product>-->
 
-<nav>
-  <div class="container">
-    <ul>
-      <li><a [routerLink]="['/']">Home</a></li>
-      <li><a [routerLink]="['/login']">Login</a></li>
-      <li><a [routerLink]="['/products']">Products</a></li>
-      <li><a [routerLink]="['/products/222']">Product 222</a></li>
-    </ul>
-  </div>
-</nav>
-<div class="container">
-  <router-outlet></router-outlet>
+<!--<nav>-->
+<!--  <div class="container">-->
+<!--    <ul>-->
+<!--      <li><a [routerLink]="['/']">Home</a></li>-->
+<!--      <li><a [routerLink]="['/login']">Login</a></li>-->
+<!--      <li><a [routerLink]="['/products']">Products</a></li>-->
+<!--      <li><a [routerLink]="['/products/222']">Product 222</a></li>-->
+<!--    </ul>-->
+<!--  </div>-->
+<!--</nav>-->
+<!--<div class="container">-->
+<!--  <router-outlet></router-outlet>-->
+<!--</div>-->
+<!--<footer>-->
+<!--  <div class="container">footer</div>-->
+<!--</footer>-->
+
+<h3>Raised Buttons</h3>
+<div class="example-button-row">
+  <button mat-raised-button>Basic</button>
+  <button mat-raised-button color="primary">Primary</button>
+  <button mat-raised-button color="accent">Accent</button>
+  <button mat-raised-button color="warn">Warn</button>
+  <button mat-raised-button disabled>Disabled</button>
+  <a mat-raised-button routerLink=".">Link</a>
 </div>
-<footer>
-  <div class="container">footer</div>
-</footer>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->

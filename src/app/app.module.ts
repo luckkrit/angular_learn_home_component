@@ -20,6 +20,7 @@ import { HomeModule } from './home/home.module';
 import { CatalogModule } from './catalog/catalog.module';
 import { routes } from './Routes';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CatalogModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
+    MatButtonModule,
   ],
   providers: [BackendService],
   bootstrap: [AppComponent],
