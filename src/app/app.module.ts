@@ -19,6 +19,7 @@ import { BackendService } from './backend.service';
 import { HomeModule } from './home/home.module';
 import { CatalogModule } from './catalog/catalog.module';
 import { routes } from './Routes';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { routes } from './Routes';
     HomeModule,
     CatalogModule,
     RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
   ],
   providers: [BackendService],
   bootstrap: [AppComponent],
